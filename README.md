@@ -1,8 +1,10 @@
 # api-servidora-com-login
  Implementação de uma API, que da acesso apenas pessoas autorizadas para o cadastro
+ 
+ 
+![1LogicaAPI](https://user-images.githubusercontent.com/127784850/226141190-fef2055f-33f6-49ff-a366-f1caac6ba3b9.png)
 
 para fazer o teste:
-
 passo 1:
 start no terminal:
 
