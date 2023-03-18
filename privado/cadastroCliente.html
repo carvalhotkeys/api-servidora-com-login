@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="index.js">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<header class="text-center text-white bg-dark gradient-custom">https://github.com/carvalhotkeys  <br>CRISTIANO CARVALHO</header>
+<script src="index.js"></script>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" href="#">Formulario</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#" onclick="clijs()">Contato</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#" onclick="clijs()">Outros</a>
+    </li>
+  </ul>
+</nav>
+
+<section class="bg-light">
+    <div class="container w-50 border p-5">
+
+        <h2 class="text-center">Cadastro de Alunos</h2>
+        
+        <form action="/action_page.php" class="was-validated"><br>
+          <div class="form-group">
+            
+            <select class="form-select" aria-label="Default select example" required>
+              <option selected>Selecione o Curso</option>
+              <option value="1">Análise e Desenvolvimento de Sistemas</option>
+              <option value="2">Ciência da Computação</option>
+              <option value="3">Gestão da Tecnologia da Informação</option>
+              <option value="4">Jogos Digitais</option>
+              <option value="5">Sistemas de Informação</option>
+              <option value="6">Redes de Computadores</option>
+            </select>
+          </div>
+
+          <div class="row g-3">
+            <div class="col">
+              <label for="Nome">Nome:</label>  
+              <input type="text" class="form-control" id= "Nome" placeholder="Primeiro nome.." aria-label="Primeiro nome" required>
+            </div>
+            <div class="col">
+              <label for="Sobrenome">Sobrenome:</label>  
+              <input type="text" class="form-control" id="Sobrenome" placeholder="Sobrenome.." aria-label="Sobrenome" required>
+            </div>
+          </div>
+
+          <div class="col-14">
+            <label for="inputAddress" class="form-label">Data Nascimento:</label>
+            <input type="datetime-local" class="form-control" id="inputAddress" placeholder="Digite sua Data aqui..." required>
+          </div>
+
+          <div class="col-14">
+            <label for="inputAddress" class="form-label">Endereço:</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="Digite seu endereço aqui..." required>
+          </div>
+          <div class="col-14">
+            <label for="inputAddress2" class="form-label">Complemento:</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, frente, casa..." required>
+          </div>
+          <div class="col-md-14">
+            <label for="inputCity" class="form-label">Cidade:</label>
+            <input type="text" class="form-control" id="inputCity" placeholder="Sua cidade..." required>
+          </div>
+          <div class="col-md-4">
+            <label for="inputState" class="form-label">Estado:</label>
+            <select id="inputState" class="form-select">
+              <option selected>SP</option>
+              <option>AM</option>
+              <option>RJ</option>
+              <option>MS</option>
+              <option>BA</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="pwd">Senha:</label>
+            <input type="password" class="form-control" id="pwd" placeholder="Escreva sua senha aqui.." name="pswd" required>
+            <div class="valid-feedback">Valido.</div>
+            <div class="invalid-feedback">Por favor, preencha este campo.</div>
+          </div>
+
+          <div class="mb-4">
+            <input type="file" class="form-control" aria-label="file example" required>
+            <div class="invalid-feedback">Anexar Curriculo ou Certificado.</div>
+          </div>
+
+          <label for="sex">Sexo:</label>
+          <div class="form-check">
+            <label class="form-check-label" for="radio1">
+              <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Masculino
+            </label>
+          </div>
+          
+          <div class="form-check">
+            <label class="form-check-label" for="radio2">
+              <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Feminino
+            </label>
+          </div>
+          <br>
+          
+          <div class="form-group form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" name="remember" required> Concordo com os termos.
+              <div class="valid-feedback">Valido.</div>
+              <div class="invalid-feedback">Marque esta caixa de seleção para continuar.</div>
+            </label>
+          </div>
+
+    
+          <div class="form-check"> 
+          </div>
+          
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-secondary" type="button" onclick="history.back()">Voltar</button>
+            <button class="btn btn-danger" type="reset">Resetar</button>
+            <button class="btn btn-primary" type="button">Concluir</button>
+          </div>
+
+        </form>
+      </div>
+      
+</section>
+
+</body>
+</html>
