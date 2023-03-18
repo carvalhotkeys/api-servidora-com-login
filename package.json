@@ -1,30 +1,24 @@
 {
-  "name": "api-servidora-com-login",
+  "name": "servidorhttp",
   "version": "1.0.0",
-  "description": "API Servidora Acesso com Login",
+  "description": "Servidor Teste",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node index",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/carvalhotkeys/api-servidora-com-login.git"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index"
   },
   "keywords": [
-    "node",
-    "express",
-    "acesso",
-    "login"
+    "Servidor",
+    "Http",
+    "Serv",
+    "Servrs",
+    "Web"
   ],
-  "author": "Cristiano Carvalho",
+  "author": "Cristiano Carvalho Parangaba",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/carvalhotkeys/api-servidora-com-login/issues"
-  },
-  "homepage": "https://github.com/carvalhotkeys/api-servidora-com-login#readme",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "express-session": "^1.17.3"
   }
 }

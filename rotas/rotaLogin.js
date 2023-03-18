@@ -1,19 +1,22 @@
-import { Router } from "express"; //modulo que fornece uma mmicro aplicacao express
+import { Router } from "express";
 
-const rotaLogin = new Router();
+const rotalogin = new Router();
 
-rotaLogin.get('/',(req,resp) => {
-    resp.redirect("/login.html") //redirecionado quanndo acessar /login para login.html
+rotalogin.get('/', (req, resp) =>{
+    resp.redirect("/login.html")
 })
-.post('/',(req,resp) => {
+// enviar requisicao dados para o servidor tipo usuario e senha
+.post('/', (req, resp) => {
     const usuario = req.body.usuario;
     const senha = req.body.senha;
-    if (usuario && senha && usuario === 'cris' && senha === '123'){
-
+    if (usuario && senha && usuario === 'cris' && senha === '123')
+    {
+        req.session.usuariologado=true;
+        resp.redirect('/cadastroCliente.html');
     }
     else{
-        resp.send("<p>falha no login </p><br><button onclick='history.back()'>Voltar </button>")
+        resp.send("<p> Usuário ou senha invalida!! </p><br><button onclick='history.back()'>VOLTAR</button>")
     }
 });
 
-export default rotaLogin;
+export default rotalogin;
