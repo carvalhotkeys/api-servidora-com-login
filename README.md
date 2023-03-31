@@ -1,6 +1,6 @@
 # api-servidora-com-login
  Implementação de uma aplicação, que da acesso apenas pessoas autorizadas para o cadastro <br>
- [Video do Teste](https://youtu.be/A_5nF31z3ME)
+ Link do teste do [PROJETO](https://youtu.be/A_5nF31z3ME)
  
  
 ![1LogicaAPI](https://user-images.githubusercontent.com/127784850/226141190-fef2055f-33f6-49ff-a366-f1caac6ba3b9.png)
